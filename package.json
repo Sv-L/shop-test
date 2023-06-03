@@ -4,8 +4,8 @@
   "description": "",
   "homepage": "https://sv-l.github.io/shop-test/",
   "scripts": {
-    "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /shop-test/"
+    "start": "parcel src/*.html --no-cache",
+    "build": "parcel build src/*.html --public-url /shop-test/ --no-cache"
   },
   "repository": {
     "type": "git",
