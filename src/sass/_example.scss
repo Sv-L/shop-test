@@ -1,0 +1,197 @@
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.link {
+  text-decoration: none;
+}
+/*--------------NAV-------------------*/
+.nav-link {
+  color: inherit;
+  font-weight: 500;
+}
+
+.current {
+  text-decoration: underline;
+  color: gray;
+}
+
+nav {
+  position: fixed;
+  padding: 30px 0 30px 30px;
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+/*--------------Shop-------------------*/
+.section-shop {
+  padding: 100px 15px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.shop-title {
+  font-style: italic;
+  font-weight: normal;
+}
+.shop-item {
+  margin-bottom: 20px;
+}
+
+.shops-list {
+  padding: 15px;
+  height: 60vh;
+  /* border: 1px solid grey; */
+}
+.shop-link {
+  color: inherit;
+  font-weight: bold;
+}
+.shop-link:active {
+  color: grey;
+}
+.foods-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  width: 80%;
+  height: 70vh;
+  overflow: auto;
+}
+
+.foods-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid grey;
+  border-radius: 5px;
+  max-width: 200px;
+  text-align: center;
+  align-items: center;
+  padding: 5px;
+}
+.img {
+  width: 190px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.add-button {
+  max-width: 65%;
+}
+/*--------------Shopping Cart-------------------*/
+.shopping-cart-form {
+  padding: 100px 15px;
+}
+.wrapper {
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 780px) {
+  .wrapper {
+    display: flex;
+    gap: 20px;
+  }
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+input {
+  height: 35px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.user-data {
+  min-width: 50%;
+  margin: 0 auto;
+  padding: 10px;
+  border: 2px solid grey;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.order-list {
+  min-width: 50%;
+  padding: 10px;
+  border: 2px solid grey;
+  border-radius: 10px;
+  height: 360px;
+  overflow: auto;
+  text-align: center;
+}
+.foods-item-card {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.img-card {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.cart-wrap {
+  display: flex;
+  justify-content: right;
+  gap: 20px;
+}
+
+.submit-btn {
+  min-width: 150px;
+  border-radius: 5px;
+  height: 50px;
+}
+
+.totalprice-text {
+  display: none;
+}
+
+.counter {
+  margin-left: auto;
+}
+
+.delete-btn {
+  color: red;
+  border: none;
+  background-color: transparent;
+}
+
+/*--------------History-------------------*/
+.history {
+  padding: 100px 30px;
+  margin: 0;
+}
+
+.order-history {
+  display: flex;
+  gap: 30px;
+}
+
+.img-history {
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+}
+
+.order-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.history-wrap {
+  display: flex;
+  gap: 10px;
+}
+
+.history-item {
+  border: 2px solid grey;
+}
