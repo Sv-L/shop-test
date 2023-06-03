@@ -54,7 +54,7 @@ function onSubmit(e) {
       item.name,
       item.price,
     ]);
-    allHistory.push(history);
+    allHistory.unshift(history);
     localStorage.setItem('history', JSON.stringify(allHistory));
     localStorage.removeItem(STORAGE_KEY);
     localStorage.removeItem('order');
