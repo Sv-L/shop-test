@@ -1,0 +1,28 @@
+{
+  "name": "parsel-template",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "",
+  "scripts": {
+    "start": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /shop-test/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sv-L/shop-test.git"
+  },
+  "keywords": [],
+  "author": "Svitlana Liulka <asl.warmhaus@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sv-L/shop-test/issues"
+  },
+  "devDependencies": {
+    "parcel": "^2.9.1",
+    "parcel-reporter-clean-dist": "^1.0.4"
+  },
+  "dependencies": {
+    "posthtml-include": "^1.7.4"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
+}
