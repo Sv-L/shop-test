@@ -25,23 +25,26 @@ function createMarkup1(res) {
 
 function createMarkup2(res) {
   const marcup = res.feed
-    .map(
-      data =>
-        `<li class="foods-item" data-shop="shop2"> <img class= "img" src="${
-          data.display.images[0]
-        }" alt="${
-          data.display.displayName
-        }" loading="lazy width="300" /> <h3 data-id="${data['tracking-id']}">${
-          data.display.displayName
-        }</h3> 
-        <p>Price: <span class = "price">${
-          data.content.details.numberOfServings
-            ? (data.content.details.numberOfServings / 10).toFixed(2)
-            : (0.4).toFixed(2)
-        }</span>$</p><button class = "add-button" type= "button">
-        Add to Cart</button></li>`
-    )
+    .map(data => {
+      const numberOfServings =
+        data &&
+        data.content &&
+        data.content.details &&
+        data.content.details.numberOfServings;
+      return `<li class="foods-item" data-shop="shop2"> <img class="img" src="${
+        data.display.images[0]
+      }" alt="${
+        data.display.displayName
+      }" loading="lazy" width="300" /> <h3 data-id="${data['tracking-id']}">${
+        data.display.displayName
+      }</h3> 
+      <p>Price: <span class="price">${
+        numberOfServings !== undefined ? numberOfServings : '5'
+      }</span>$</p><button class="add-button" type="button">
+      Add to Cart</button></li>`;
+    })
     .join('');
+
   return marcup;
 }
 
