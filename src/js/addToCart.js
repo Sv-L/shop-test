@@ -7,8 +7,6 @@ if (order) {
   allOrder = Array.isArray(order) ? [...order] : [order];
 }
 
-console.log('allOrder', allOrder);
-
 function onClickAddToCartButtonEl(event) {
   const foodItemEl = event.target.closest('.foods-item');
   const imgEl = foodItemEl.querySelector('.img');
